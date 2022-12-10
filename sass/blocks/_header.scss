@@ -1,0 +1,96 @@
+.site-header {
+  padding-bottom: 700px;
+  background-image: url("../images/header-bgi.webp");
+  background-repeat: no-repeat;
+  background-position: calc(50%) calc(50% - 868px);
+}
+
+.site-header-top {
+  padding: 50px 0;
+}
+
+.btn-mode {
+  padding: 7px;
+  background-color: #ffffff33;
+  border: 1px solid #ffffff33;
+  border-radius: 32px;
+}
+
+.navbar__link {
+  font-size: 18px;
+  line-height: 155%;
+  letter-spacing: 0.01em;
+}
+
+.navbar__link:hover {
+  border-bottom: 1px solid #fff;
+  text-decoration-line: underline;
+  opacity: 0.5;
+}
+
+.site-header-hero__inner {
+   padding-bottom: 882px;
+   background-image: url("../images/macbook.webp");
+   background-repeat: no-repeat;
+   background-size: 978px 579px;
+   background-position: calc(50%) calc(50% + 25px);
+}
+
+.site-header-hero {
+  padding-top: 100px;
+}
+
+.site-header-hero__content {
+  width: 100%;
+  max-width: 737px;
+}
+
+.site-header-hero__desc {
+  width: 100%;
+  max-width: 471px;
+}
+
+.site-header-hero__title {
+  margin: 0;
+  margin-bottom: 24px;
+  font-weight: 800;
+  font-size: 56px;
+  line-height: 120%;
+  letter-spacing: -0.01em;
+}
+
+.site-header-hero__text {
+  margin-bottom: 40px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 155%;
+  letter-spacing: 0.01em;
+}
+
+.site-header-hero__link {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 155%;
+  letter-spacing: 0.01em;
+  width: 187px;
+}
+.site-header-hero__link1 {
+  margin-right: 33px;
+  padding: 17.5px 0;
+  background-color: #ff007a;
+  border: 1px solid transparent;
+  box-shadow: 0px 1px 2px #1018280d;
+}
+.site-header-hero__link2 {
+  padding: 12px 0;
+}
+
+.site-header-hero__link2::after {
+  display: inline-block;
+  margin-left: 16px;
+  width: 36px;
+  height: 36px;
+  background-image: url("../../images/btn-video.svg");
+  background-repeat: no-repeat;
+  content: "";
+}
