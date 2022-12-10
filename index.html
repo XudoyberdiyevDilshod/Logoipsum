@@ -12,7 +12,7 @@
    <header class="site-header">
       <div class="site-header-top">
          <div class="container d-flex align-items-center">
-            <a class="list-unstyled" href="./index.html">
+            <a class="text-decoration-none" href="./index.html">
                <img src="./images/Logo.svg" alt="site logo" width="160" height="32">
             </a>
             <nav class="navbar ms-auto">
@@ -382,11 +382,11 @@
                      <h2 class="news__title mb-3 fw-bold">Recent News</h2>
                      <p class="news__text m-0 fw-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
                   </div>
-                  <a class="news__link ms-auto py-3 px-4 fw-normal btn border rounded-pill" href="#">View all</a>
+                  <a class="news__link ms-auto py-3 px-4 fw-normal text-decoration-none rounded-pill" href="#">View all</a>
                </div>
                <div class="row row-cols-1 row-cols-md-3 g-4">
-                  <div class="col">
-                    <div class="card p-0">
+                  <div class="col m-0">
+                    <div class="news__card card p-0 border-0">
                       <picture>
                         <source
                            type="image/webp"
@@ -400,14 +400,17 @@
                            alt="Easy Advance Protection"
                         >
                       </picture>
-                      <div class="card-body">
-                        <h3 class="card-title">Card title</h3>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <div class="card-body m-0 p-4">
+                        <small class="news-small bg-light">Social media</small>
+                        <time class="news-time ms-3 bg">5 min read</time>
+                        <h3 class="news-card-title">Our Favorite Productive Thing Is SaaSup</h3>
+                        <p class="news-card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
+                        <a class="news-card__link fw-normal text-decoration-none" href="#">Read more</a>
                       </div>
                     </div>
                   </div>
-                  <div class="col">
-                    <div class="card p-0">
+                  <div class="col m-0">
+                    <div class="news__card card p-0 border-0">
                      <picture>
                         <source
                            type="image/webp"
@@ -421,14 +424,17 @@
                            alt="Easy Advance Protection"
                         >
                      </picture>
-                      <div class="card-body">
-                        <h3 class="card-title">Card title</h3>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <div class="card-body m-0 p-4">
+                        <small class="news-small bg-light">Productiva</small>
+                        <time class="news-time ms-3 bg">5 min read</time>
+                        <h3 class="news-card-title">Young Startups With SaaSup In Full Throttle</h3>
+                        <p class="news-card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
+                        <a class="news-card__link fw-normal text-decoration-none" href="#">Read more</a>
                       </div>
                     </div>
                   </div>
-                  <div class="col">
-                    <div class="card p-0">
+                  <div class="col m-0">
+                    <div class="news__card card p-0 border-0">
                      <picture>
                         <source
                            type="image/webp"
@@ -442,9 +448,12 @@
                            alt="Easy Advance Protection"
                         >
                      </picture>
-                      <div class="card-body">
-                        <h3 class="card-title">Card title</h3>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <div class="card-body m-0 p-4">
+                        <small class="news-small bg-light">Category</small>
+                        <time class="news-time ms-3 bg">5 min read</time>
+                        <h3 class="news-card-title">The perfect integration for all real time a reality services</h3>
+                        <p class="news-card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
+                        <a class="news-card__link fw-normal text-decoration-none" href="#">Read more</a>
                       </div>
                     </div>
                   </div>
@@ -453,6 +462,57 @@
          </div>
       </section>
    </main>
+   <footer class="site-footer">
+      <div class="container">
+         <div class="site-footer__inner">
+            <div class="site-footer__wrapper d-flex align-items-start border-bottom">
+               <div class="site-footer__content">
+                  <a class="text-decoration-none" href="#">
+                     <img src="./images/Logo-f.svg" alt="site logo" width="144" height="29">
+                  </a>
+                  <div class="navbar mt-4">
+                     <ul class="navbar__list d-flex align-items-center gap-5 list-unstyled mb-0">
+                        <li class="navbar__item">
+                           <a class="navbar__link fw-normal text-white text-decoration-none" href="./index.html">Home</a>
+                        </li>
+                        <li class="navbar__item">
+                           <a class="navbar__link fw-normal text-white text-decoration-none" href="#">About Us</a>
+                        </li>
+                        <li class="navbar__item">
+                           <a class="navbar__link fw-normal text-white text-decoration-none" href="#">Pricing</a>
+                        </li>
+                        <li class="navbar__item">
+                           <a class="navbar__link fw-normal text-white text-decoration-none" href="#">Contact Us</a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="site-footer__desc ms-auto">
+                  <span class="fw-bold text-white">Subscribe</span>
+                  <form class="form d-flex align-items-center mt-4" action="https://echo.htmlacademy.ru" method="post">
+                     <input class="trial__input form-control d-inline-block rounded-pill" name="user_email" type="email" placeholder="Enter your email" aria-label="Enter your email" required>
+                     <button class="trial__btn d-inline-block ms-3 py-3 text-white rounded-pill" type="submit">Subscribe</button>
+                  </form>
+                  <small class="trial__small d-inline-block text-white">By clicking Sign Up you're confirming that you agree with our Terms and Conditions.</small>
+               </div>
+            </div>
+            <div class="d-flex mt-4">
+               <ul class="footer__list mb-0 d-flex align-items-center list-unstyled">
+                  <li class="footer__item">
+                     <a class="footer__link text-white text-decoration-underline" href="#">Privacy Policy</a>
+                  </li>
+                  <li class="footer__item">
+                     <a class="footer__link mx-4 text-white text-decoration-underline" href="#">Terms of Service</a>
+                  </li>
+                  <li class="footer__item">
+                     <a class="footer__link text-white text-decoration-underline" href="#">Cookies Settings</a>
+                  </li>
+               </ul>
+               <small class="ms-auto text-white">2022 airdokan. All right reserved.</small>
+            </div>
+         </div>
+      </div>
+   </footer>
    <script src="./bootstrap-5.2.2-dist/js/bootstrap.js"></script>
    <script src="./js/main.js"></script>
 </body>
