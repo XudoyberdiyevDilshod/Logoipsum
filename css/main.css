@@ -424,7 +424,7 @@ img {
 }
 
 .site-header {
-  background-image: url("../images/header-bgimg.wepb"), url("../images/Rectangle.wepb"), url("../images/oval.wepb");
+  background-image: url("../images/header-bgimg.webp"), url("../images/Rectangle.webp"), url("../images/oval.webp");
   background-repeat: no-repeat;
   background-position: calc(50% + 10px) calc(50% - 513px), 50% calc(50% - 513px), 50% calc(50% - 10px);
   background-size: auto, 100% 900px, 100% 130px;
