@@ -1,6 +1,63 @@
 .software {
+  padding-bottom: 100px;
 }
 
-.box {
+.software__content {
+  margin-bottom: 80px;
+  width: 100%;
+  max-width: 575px;
+}
+
+.software__title {
+  margin-bottom: 16px;
+  font-size: 48px;
+  line-height: 120%;
+  letter-spacing: -0.01em;
+  color: #211f25;
+}
+
+.software__text {
+  font-size: 16px;
+  line-height: 155%;
+  letter-spacing: 0.01em;
+  color: #3d3a41;
+}
+
+.card {
   padding: 24px;
+}
+
+.card:hover {
+  background-color: #f7f5ff;
+}
+
+.card:hover a {
+  color: #ff007a;
+}
+
+.img2 {
+  margin-bottom: 15px;
+}
+
+.card-title {
+  font-size: 32px;
+  line-height: 120%;
+  letter-spacing: -0.01em;
+  color: #211f25;
+}
+
+.card-text {
+  margin-bottom: 40px;
+  font-size: 16px;
+  line-height: 155%;
+  letter-spacing: 0.02em;
+  color: #3d3a41;
+}
+
+.card-link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 155%;
+  letter-spacing: 0.02em;
+  color: #211f25;
 }

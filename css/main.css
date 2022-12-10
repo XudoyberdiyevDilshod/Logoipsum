@@ -522,6 +522,345 @@ img {
   content: "";
 }
 
-.box {
+.software {
+  padding-bottom: 100px;
+}
+
+.software__content {
+  margin-bottom: 80px;
+  width: 100%;
+  max-width: 575px;
+}
+
+.software__title {
+  margin-bottom: 16px;
+  font-size: 48px;
+  line-height: 120%;
+  letter-spacing: -0.01em;
+  color: #211f25;
+}
+
+.software__text {
+  font-size: 16px;
+  line-height: 155%;
+  letter-spacing: 0.01em;
+  color: #3d3a41;
+}
+
+.card {
   padding: 24px;
+}
+
+.card:hover {
+  background-color: #f7f5ff;
+}
+
+.card:hover a {
+  color: #ff007a;
+}
+
+.img2 {
+  margin-bottom: 15px;
+}
+
+.card-title {
+  font-size: 32px;
+  line-height: 120%;
+  letter-spacing: -0.01em;
+  color: #211f25;
+}
+
+.card-text {
+  margin-bottom: 40px;
+  font-size: 16px;
+  line-height: 155%;
+  letter-spacing: 0.02em;
+  color: #3d3a41;
+}
+
+.card-link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 155%;
+  letter-spacing: 0.02em;
+  color: #211f25;
+}
+
+.protection-top {
+  padding: 100px 0;
+  background-color: #fcfbff;
+}
+
+.protection__content {
+  padding: 72px 0;
+  width: 100%;
+  max-width: 620px;
+}
+
+.protection-img1 {
+  right: 340px;
+  bottom: -80px;
+  z-index: 10;
+}
+
+.protection-img2 {
+  left: 340px;
+  bottom: -80px;
+  z-index: 10;
+}
+
+.protection-middle {
+  padding: 100px 0;
+}
+
+.protection__heading {
+  width: 100%;
+  max-width: 554px;
+}
+
+.protection__title {
+  font-size: 48px;
+  line-height: 120%;
+  letter-spacing: -0.01em;
+  color: #211f25;
+}
+
+.protection__text {
+  margin-bottom: 40px;
+  font-size: 16px;
+  line-height: 155%;
+  letter-spacing: 0.02em;
+  color: #3d3a41;
+}
+
+.protection__link {
+  width: 187px;
+  font-size: 16px;
+  line-height: 155%;
+  letter-spacing: 0.01em;
+  color: #ff007a;
+  border: 1px solid #ff007a;
+  filter: drop-shadow(0px 1px 2px rgba(16, 24, 40, 0.05));
+}
+
+.customer {
+  padding: 100px 0;
+  background-color: #fcfbff;
+}
+
+.customer__content {
+  margin-bottom: 80px;
+}
+
+.customer__title {
+  font-size: 48px;
+  line-height: 120%;
+  letter-spacing: -0.01em;
+  color: #211f25;
+}
+
+.customer__text {
+  font-size: 16px;
+  line-height: 155%;
+  letter-spacing: 0.02em;
+  color: #3d3a41;
+}
+
+.card-box {
+  padding: 30px;
+  background: #f7f5ff;
+  border: 0.96024px solid transparent;
+  border-radius: 8px;
+}
+
+.card-box:hover {
+  border: 0.96024px solid #ff007a;
+}
+
+.card-body {
+  margin-top: 30px;
+}
+
+.card__content--box {
+  width: 166px;
+  margin-left: 15px;
+}
+
+.card__content::before {
+  display: inline-flex;
+  width: 54px;
+  height: 54px;
+  background-repeat: no-repeat;
+  content: "";
+}
+
+.card__content1::before {
+  background-image: url("../images/brooklyn-simmons.webp");
+}
+
+.card__content2::before {
+  background-image: url("../images/darrell-steward.webp");
+}
+
+.card__content3::before {
+  background-image: url("../images/courtney-henry.webp");
+}
+
+.card__content--title {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: -0.01em;
+  color: #211f25;
+}
+
+.card__content--text {
+  font-family: "Roboto";
+  font-size: 15.3638px;
+  line-height: 150%;
+  color: #3d3a41;
+}
+
+.pricing {
+  padding: 100px 0;
+}
+
+.pricing__content {
+  margin-bottom: 80px;
+}
+
+.pricing__title {
+  font-size: 48px;
+  line-height: 120%;
+  letter-spacing: -0.01em;
+}
+
+.pricing__text {
+  font-size: 16px;
+  line-height: 155%;
+  letter-spacing: 0.02em;
+}
+
+.pricing__item {
+  padding: 31px;
+  width: 100%;
+  max-width: 405px;
+  border: 0.97561px solid transparent;
+}
+
+.pricing-item:hover {
+  border: 0.97561px solid #ff007a;
+  border-radius: 8px;
+}
+
+.pricing-item:hover a {
+  background: #ff007a;
+  color: #fff;
+}
+
+.pricing__title {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: -0.01em;
+  color: #211f25;
+}
+
+.pricing__ins {
+  font-weight: 800;
+  font-size: 28px;
+  line-height: 120%;
+  color: #211f25;
+}
+
+.pricing__ins-light {
+  font-size: 16px;
+  line-height: 155%;
+  letter-spacing: 0.02em;
+  color: #3d3a41;
+}
+
+.pricing-item__item {
+  font-size: 16px;
+  line-height: 155%;
+  letter-spacing: 0.02em;
+  color: #3d3a41;
+}
+
+.pricing-item__item::before {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 16px;
+  width: 23px;
+  height: 23px;
+  background-image: url("../images/Vectors.svg");
+  background-repeat: no-repeat;
+  content: "";
+}
+
+.pricing__link {
+  width: 342px;
+  border: 1px solid #ff007a;
+  border-radius: 32px;
+}
+
+.trial {
+  padding: 112px 0;
+  background-color: #6b50ff;
+}
+
+.trial__title {
+  font-size: 48px;
+  line-height: 120%;
+  letter-spacing: -0.01em;
+}
+
+.trial__text {
+  margin-bottom: 44px;
+  font-size: 18px;
+  line-height: 150%;
+}
+
+.trial__input {
+  padding: 12px 24px;
+}
+
+.trial__input::-moz-placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #505050;
+}
+
+.trial__input:-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #505050;
+}
+
+.trial__input::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #505050;
+}
+
+.trial__btn {
+  padding: 0 32px;
+  background: #FF007A;
+}
+
+.trial__small {
+  margin-top: 20px;
+}
+
+.news {
+  padding: 120px 0;
+}
+
+.news__content {
+  margin-bottom: 80px;
 }/*# sourceMappingURL=main.css.map */

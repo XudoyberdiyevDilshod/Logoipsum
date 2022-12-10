@@ -1,0 +1,76 @@
+.customer {
+  padding: 100px 0;
+  background-color: #fcfbff;
+}
+
+.customer__content {
+  margin-bottom: 80px;
+}
+
+.customer__title {
+  font-size: 48px;
+  line-height: 120%;
+  letter-spacing: -0.01em;
+  color: #211f25;
+}
+
+.customer__text {
+  font-size: 16px;
+  line-height: 155%;
+  letter-spacing: 0.02em;
+  color: #3d3a41;
+}
+
+.card-box {
+  padding: 30px;
+  background: #f7f5ff;
+  border: 0.96024px solid transparent;
+  border-radius: 8px;
+}
+
+.card-box:hover {
+  border: 0.96024px solid #ff007a;
+}
+
+.card-body {
+  margin-top: 30px;
+}
+
+.card__content--box {
+  width: 166px;
+  margin-left: 15px;
+}
+
+.card__content::before {
+  display: inline-flex;
+  width: 54px;
+  height: 54px;
+  background-repeat: no-repeat;
+  content: "";
+}
+
+.card__content1::before {
+  background-image: url("../images/brooklyn-simmons.webp");
+}
+.card__content2::before {
+  background-image: url("../images/darrell-steward.webp");
+}
+.card__content3::before {
+  background-image: url("../images/courtney-henry.webp");
+}
+
+.card__content--title {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: -0.01em;
+  color: #211f25;
+}
+
+.card__content--text {
+  font-family: "Roboto";
+  font-size: 15.3638px;
+  line-height: 150%;
+  color: #3d3a41;
+}
