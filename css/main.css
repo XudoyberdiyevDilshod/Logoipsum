@@ -424,9 +424,10 @@ img {
 }
 
 .site-header {
-  background-image: url("../images/header-bgi.webp");
+  background-image: url("../images/header-bgimg.wepb"), url("../images/Rectangle.wepb"), url("../images/oval.wepb");
   background-repeat: no-repeat;
-  background-position: 50% calc(50% - 513px);
+  background-position: calc(50% + 10px) calc(50% - 513px), 50% calc(50% - 513px), 50% calc(50% - 10px);
+  background-size: auto, 100% 900px, 100% 130px;
 }
 
 .site-header-top {
@@ -517,7 +518,7 @@ img {
   margin-left: 16px;
   width: 36px;
   height: 36px;
-  background-image: url("../../images/btn-video.svg");
+  background-image: url("../images/btn-video.svg");
   background-repeat: no-repeat;
   content: "";
 }
@@ -936,7 +937,7 @@ img {
   margin-left: 8px;
   width: 15px;
   height: 15px;
-  background-image: url("../../../images/Vector.svg");
+  background-image: url("../images/Vector.svg");
   background-repeat: no-repeat;
   content: "";
   background-position: top -5px;
