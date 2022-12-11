@@ -6,16 +6,18 @@
   margin-bottom: 80px;
 }
 
-.pricing__title {
+.pricing__heading {
   font-size: 48px;
   line-height: 120%;
   letter-spacing: -0.01em;
+  color: var(--main-title);
 }
 
 .pricing__text {
   font-size: 16px;
   line-height: 155%;
   letter-spacing: 0.02em;
+  color: var(--main-text);
 }
 
 .pricing__item {
@@ -26,11 +28,12 @@
 }
 
 .pricing-item:hover {
-  border: 0.97561px solid #ff007a;
+  border: 0.97561px solid var(--main-box-hover-a);
   border-radius: 8px;
 }
 
 .pricing-item:hover a {
+  border: 1px solid transparent;
   background: #ff007a;
   color: #fff;
 }
@@ -41,28 +44,28 @@
   font-size: 20px;
   line-height: 150%;
   letter-spacing: -0.01em;
-  color: #211f25;
+  color: var(--main-title);
 }
 
 .pricing__ins {
   font-weight: 800;
   font-size: 28px;
   line-height: 120%;
-  color: #211f25;
+  color: var(--main-title);
 }
 
 .pricing__ins-light {
   font-size: 16px;
   line-height: 155%;
   letter-spacing: 0.02em;
-  color: #3d3a41;
+  color: var(--main-text);
 }
 
 .pricing-item__item {
   font-size: 16px;
   line-height: 155%;
   letter-spacing: 0.02em;
-  color: #3d3a41;
+  color: var(--main-text);
 }
 
 .pricing-item__item::before {
@@ -78,6 +81,16 @@
 
 .pricing__link {
   width: 342px;
-  border: 1px solid #ff007a;
+  color: var(--main-box-hover-a);
+  border: 1px solid var(--main-box-hover-a);
   border-radius: 32px;
+}
+
+@media only screen and (max-width: 576px) {
+  .pricing__content {
+    width: 333px;
+  }
+  .pricing__list {
+    flex-direction: column;
+  }
 }

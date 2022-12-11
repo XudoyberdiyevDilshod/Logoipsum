@@ -1,6 +1,6 @@
 .customer {
   padding: 100px 0;
-  background-color: #fcfbff;
+  background-color: var(--main-protection-bg);
 }
 
 .customer__content {
@@ -11,19 +11,19 @@
   font-size: 48px;
   line-height: 120%;
   letter-spacing: -0.01em;
-  color: #211f25;
+  color: var(--main-title);
 }
 
 .customer__text {
   font-size: 16px;
   line-height: 155%;
   letter-spacing: 0.02em;
-  color: #3d3a41;
+  color: var(--main-text);
 }
 
 .card-box {
   padding: 30px;
-  background: #f7f5ff;
+  background: var(--main-card-bg);
   border: 0.96024px solid transparent;
   border-radius: 8px;
 }
@@ -65,12 +65,36 @@
   font-size: 20px;
   line-height: 150%;
   letter-spacing: -0.01em;
-  color: #211f25;
+  color: var(--main-title);
 }
 
 .card__content--text {
   font-family: "Roboto";
   font-size: 15.3638px;
   line-height: 150%;
-  color: #3d3a41;
+  color: var(--main-text);
+}
+
+@media only screen and (max-width: 576px) {
+  .customer__title {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min--moz-device-pixel-ratio: 2),
+  only screen and (-o-min-device-pixel-ratio: 2/1),
+  only screen and (min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: 2dppx) {
+    .card__content1::before {
+      background-image: url("../images/brooklyn-simmons@2x.webp");
+    }
+    .card__content2::before {
+      background-image: url("../images/darrell-steward@2x.webp");
+    }
+    .card__content3::before {
+      background-image: url("../images/courtney-henry@2x.webp");
+    }
 }

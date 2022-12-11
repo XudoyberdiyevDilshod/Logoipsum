@@ -1,6 +1,6 @@
 .trial {
   padding: 112px 0;
-  background-color: #6b50ff;
+  background: var(--main-trial-bg);
 }
 
 .trial__title {
@@ -17,6 +17,7 @@
 
 .trial__input {
   padding: 12px 24px;
+  width: 365px;
 }
 
 .trial__input::placeholder {
@@ -29,9 +30,15 @@
 .trial__btn {
   width: 127px;
   padding: 0 32px;
-  background: #ff007a;
+  background: var(--main-box-hover-a);
 }
 
 .trial__small {
   margin-top: 20px;
+}
+
+@media only screen and (max-width: 576px) {
+  .trial__title {
+    font-size: 38px;
+  }
 }

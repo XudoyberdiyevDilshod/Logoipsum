@@ -13,26 +13,27 @@
   font-size: 48px;
   line-height: 120%;
   letter-spacing: -0.01em;
-  color: #211f25;
+  color: var(--main-title);
 }
 
 .software__text {
   font-size: 16px;
   line-height: 155%;
   letter-spacing: 0.01em;
-  color: #3d3a41;
+  color: var(--main-text);
 }
 
 .box {
   padding: 24px;
+  background-color: transparent;
 }
 
 .box:hover {
-  background-color: #f7f5ff;
+  background-color: var(--main-box-hover-bg);
 }
 
 .box:hover a {
-  color: #ff007a;
+  color: var(--main-box-hover-a);
 }
 
 .img2 {
@@ -43,7 +44,7 @@
   font-size: 32px;
   line-height: 120%;
   letter-spacing: -0.01em;
-  color: #211f25;
+  color: var(--main-title);
 }
 
 .card-text {
@@ -51,7 +52,7 @@
   font-size: 16px;
   line-height: 155%;
   letter-spacing: 0.02em;
-  color: #3d3a41;
+  color: var(--main-text);
 }
 
 .card-link {
@@ -59,5 +60,16 @@
   font-size: 16px;
   line-height: 155%;
   letter-spacing: 0.02em;
-  color: #211f25;
+  color: var(--main-title);
+}
+
+@media only screen and (max-width: 576px) {
+  .software__content {
+    width: 333px;
+    margin-bottom: 30px;
+  }
+  .software__title {
+    font-size: 36px;
+    line-height: 42px;
+  }
 }

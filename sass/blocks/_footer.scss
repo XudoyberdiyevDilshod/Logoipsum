@@ -1,8 +1,17 @@
 .site-footer {
   padding: 100px 0;
-  background-color: #211f25;
+  background-color: var(--footer-bg);
 }
 
 .site-footer__wrapper {
   padding-bottom: 80px;
+}
+
+@media only screen and (max-width: 576px) {
+  .site-footer__wrapper {
+    flex-direction: column;
+  }
+  .site-footer__bottom {
+    flex-direction: column;
+  }
 }

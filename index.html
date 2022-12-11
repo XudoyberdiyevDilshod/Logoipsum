@@ -12,7 +12,7 @@
    <header class="site-header">
       <div class="site-header-top">
          <div class="container d-flex align-items-center">
-            <a class="text-decoration-none" href="./index.html">
+            <a class="site-header__link position-relative text-decoration-none" href="./index.html">
                <img src="./images/Logo.svg" alt="site logo" width="160" height="32">
             </a>
             <nav class="navbar ms-auto">
@@ -29,13 +29,26 @@
                   <li class="navbar__item">
                      <a class="navbar__link fw-normal text-white text-decoration-none" href="#">Contact Us</a>
                   </li>
-                  <li class="navbar__item text-decoration-none">
-                     <button class="btn btn-mode">
-                        <img src="./images/btn-mode.svg" alt="btn mode" width="40" height="40">
-                     </button>
-                  </li>
                </ul>
             </nav>
+            <button class="site-header__btn btn btn-mode ms-4 position-relative">
+               <img src="./images/btn-mode.svg" alt="btn mode" width="40" height="40">
+            </button>
+            <button class="site-header__burger-btn burger-btn-m btn position-relative">
+               <img src="./images/burger-menu.svg" alt="btn mode" width="40" height="40">
+            </button>
+            <div class="overlay-m">
+               <a class="overley-link text-decoration-none" href="./index.html">
+                  <img src="./images/Logo.svg" alt="site logo" width="160" height="32">
+               </a>
+               <button class="close-btn-m">X</button>
+               <div class="overlay-content-m">
+                 <a class="fw-bold text-decoration-none" href="#">Home</a>
+                 <a class="fw-bold text-decoration-none" href="#">About Us</a>
+                 <a class="fw-bold text-decoration-none" href="#">Pricing</a>
+                 <a class="fw-bold text-decoration-none" href="#">Contact Us</a>
+               </div>
+             </div>
          </div>
       </div>
       <div class="site-header-hero">
@@ -46,8 +59,14 @@
                   <div class="site-header-hero__desc mx-auto">
                      <p class="site-header-hero__text text-center text-white">Make your work easier with an integrated ecosystem that lets all departments work properly together.</p>
                   </div>
-                  <a class="btn text-white site-header-hero__link site-header-hero__link1 rounded-pill" href="#">Get Started</a>
-                  <a class="btn d-inline-flex align-items-center justify-content-center text-white site-header-hero__link site-header-hero__link2 border rounded-pill" href="#">Watch Video</a>
+                  <a class="position-relative btn text-white site-header-hero__link site-header-hero__link1 rounded-pill" href="#">Get Started</a>
+                  <div class="overlay">
+                     <div class="modals">
+                       <button class="close-btn">X</button>
+                       <iframe class="overlay-iframe" width="1280" height="617" src="https://www.youtube.com/embed/jEdfjuG0Fx4" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                     </div>
+                   </div>
+                  <button class="open-btn position-relative btn d-inline-flex align-items-center justify-content-center text-white site-header-hero__link site-header-hero__link2 border rounded-pill" href="#">Watch Video</button>
                </div>
             </div>
          </div>
@@ -95,7 +114,7 @@
             <div class="container">
                <div class="protection__inner position-relative d-flex align-items-center justify-content-between">
                   <h2 class="visually-hidden">Protection</h2>
-                  <div class="protection__content">
+                  <div class="protection__content position-relative">
                      <h3 class="protection__title fw-bold mb-4">Easy Advance Protection</h3>
                      <p class="protection__text fw-normal">Use marketing automation to identify hot leads and email your sales team telling them to follow up. Nurture and contact leads at the opportune time to maximize.</p>
                      <a class="protection__link p-3 d-inline-block text-center rounded-pill text-decoration-none" href="#">Read more</a>
@@ -107,6 +126,7 @@
                         srcset="./images/easy-protection.webp 1x, ./images/easy-protection@2x.webp 2x"
                      >
                      <img
+                        class="protetion-image1 position-relative"
                         src="./images/easy-protection.jpg"
                         width="509"
                         height="352"
@@ -119,8 +139,8 @@
          </div>
          <div class="protection-middle">
             <div class="container">
-               <div class="protection__inner position-relative d-flex align-items-center justify-content-between flex-row-reverse">
-                  <div class="protection__content">
+               <div class="protection__inner position-relative d-flex align-items-center justify-content-between md:flex-row-reverse">
+                  <div class="protection__content position-relative">
                      <div class="protection__heading">
                         <h3 class="protection__title fw-bold mb-4">Advance Protection Mode Easy </h3>
                      </div>
@@ -134,6 +154,7 @@
                         srcset="./images/advance-protection.webp 1x, ./images/advance-protection@2x.webp 2x"
                      >
                      <img
+                        class="protetion-image2 position-relative"
                         src="./images/advance-protection.jpg"
                         width="515"
                         height="361"
@@ -314,7 +335,7 @@
          <div class="container">
             <div class="pricing__inner">
                <div class="pricing__content mx-auto text-center">
-                  <h2 class="pricing__title mb-3 fw-bold">Simple and flexible pricing</h2>
+                  <h2 class="pricing__heading mb-3 fw-bold">Simple and flexible pricing</h2>
                   <p class="pricing__text m-0 fw-normal">Start with Support and build your own custom solution or choose The Suite</p>
                </div>
                <ol class="pricing__list list-unstyled m-0 d-flex align-items-center justify-content-between">
@@ -367,7 +388,7 @@
                <h2 class="trial__title mb-4 fw-bold">Get started a 15-days free trial</h2>
                <p class="trial__text fw-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
                <form class="form d-flex align-items-center justify-content-center" action="https://echo.htmlacademy.ru" method="post">
-                  <input class="trial__input form-control w-25 d-inline-block rounded-pill" name="user_email" type="email" placeholder="Enter your email" aria-label="Enter your email" required>
+                  <input class="trial__input form-control d-inline-block rounded-pill" name="user_email" type="email" placeholder="Enter your email" aria-label="Enter your email" required>
                   <button class="trial__btn btn d-inline-block ms-3 py-3 text-white rounded-pill" type="submit">Sign Up</button>
                </form>
                <small class="trial__small d-inline-block">By clicking Sign Up you're confirming that you agree with our Terms and Conditions.</small>
@@ -401,9 +422,9 @@
                         >
                       </picture>
                       <div class="card-body m-0 p-4">
-                        <small class="news-small bg-light">Social media</small>
-                        <time class="news-time ms-3 bg">5 min read</time>
-                        <h3 class="news-card-title">Our Favorite Productive Thing Is SaaSup</h3>
+                        <small class="news-small">Social media</small>
+                        <time class="news-time ms-3">5 min read</time>
+                        <h3 class="news-card-title mt-3">Our Favorite Productive Thing Is SaaSup</h3>
                         <p class="news-card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
                         <a class="news-card__link fw-normal text-decoration-none" href="#">Read more</a>
                       </div>
@@ -425,9 +446,9 @@
                         >
                      </picture>
                       <div class="card-body m-0 p-4">
-                        <small class="news-small bg-light">Productiva</small>
-                        <time class="news-time ms-3 bg">5 min read</time>
-                        <h3 class="news-card-title">Young Startups With SaaSup In Full Throttle</h3>
+                        <small class="news-small">Productiva</small>
+                        <time class="news-time ms-3">5 min read</time>
+                        <h3 class="news-card-title mt-3">Young Startups With SaaSup In Full Throttle</h3>
                         <p class="news-card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
                         <a class="news-card__link fw-normal text-decoration-none" href="#">Read more</a>
                       </div>
@@ -449,9 +470,9 @@
                         >
                      </picture>
                       <div class="card-body m-0 p-4">
-                        <small class="news-small bg-light">Category</small>
-                        <time class="news-time ms-3 bg">5 min read</time>
-                        <h3 class="news-card-title">The perfect integration for all real time a reality services</h3>
+                        <small class="news-small">Category</small>
+                        <time class="news-time ms-3">5 min read</time>
+                        <h3 class="news-card-title mt-3">The perfect integration for all real time a reality services</h3>
                         <p class="news-card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
                         <a class="news-card__link fw-normal text-decoration-none" href="#">Read more</a>
                       </div>
@@ -464,30 +485,28 @@
    </main>
    <footer class="site-footer">
       <div class="container">
-         <div class="site-footer__inner">
-            <div class="site-footer__wrapper d-flex align-items-start border-bottom">
-               <div class="site-footer__content">
+         <div class="site-footer__inner ">
+            <div class="site-footer__wrapper d-flex align-items-start border-bottom ">
+               <div class="site-footer__content mx-auto">
                   <a class="text-decoration-none" href="#">
                      <img src="./images/Logo-f.svg" alt="site logo" width="144" height="29">
                   </a>
-                  <div class="navbar mt-4">
-                     <ul class="navbar__list d-flex align-items-center gap-5 list-unstyled mb-0">
-                        <li class="navbar__item">
-                           <a class="navbar__link fw-normal text-white text-decoration-none" href="./index.html">Home</a>
-                        </li>
-                        <li class="navbar__item">
-                           <a class="navbar__link fw-normal text-white text-decoration-none" href="#">About Us</a>
-                        </li>
-                        <li class="navbar__item">
-                           <a class="navbar__link fw-normal text-white text-decoration-none" href="#">Pricing</a>
-                        </li>
-                        <li class="navbar__item">
-                           <a class="navbar__link fw-normal text-white text-decoration-none" href="#">Contact Us</a>
-                        </li>
-                     </ul>
-                  </div>
+                  <ul class="footer-navbar__list d-flex flex-wrap align-items-center gap-5 list-unstyled mt-4 mb-5 md:mb-0">
+                     <li class="navbar__item">
+                        <a class="navbar__link fw-normal text-white text-decoration-none" href="./index.html">Home</a>
+                     </li>
+                     <li class="navbar__item">
+                        <a class="navbar__link fw-normal text-white text-decoration-none" href="#">About Us</a>
+                     </li>
+                     <li class="navbar__item">
+                        <a class="navbar__link fw-normal text-white text-decoration-none" href="#">Pricing</a>
+                     </li>
+                     <li class="navbar__item">
+                        <a class="navbar__link fw-normal text-white text-decoration-none" href="#">Contact Us</a>
+                     </li>
+                  </ul>
                </div>
-               <div class="site-footer__desc ms-auto">
+               <div class="site-footer__desc mx-auto md:ms-auto">
                   <span class="fw-bold text-white">Subscribe</span>
                   <form class="form d-flex align-items-center mt-4" action="https://echo.htmlacademy.ru" method="post">
                      <input class="trial__input form-control d-inline-block rounded-pill" name="user_email" type="email" placeholder="Enter your email" aria-label="Enter your email" required>
@@ -496,8 +515,8 @@
                   <small class="trial__small d-inline-block text-white">By clicking Sign Up you're confirming that you agree with our Terms and Conditions.</small>
                </div>
             </div>
-            <div class="d-flex mt-4">
-               <ul class="footer__list mb-0 d-flex align-items-center list-unstyled">
+            <div class="site-footer__bottom d-flex align-items-end mt-4">
+               <ul class="footer__list md:mx-auto d-flex align-items-center list-unstyled">
                   <li class="footer__item">
                      <a class="footer__link text-white text-decoration-underline" href="#">Privacy Policy</a>
                   </li>
@@ -508,7 +527,7 @@
                      <a class="footer__link text-white text-decoration-underline" href="#">Cookies Settings</a>
                   </li>
                </ul>
-               <small class="ms-auto text-white">2022 airdokan. All right reserved.</small>
+               <small class="md:mx-auto md:mt-5 ms-auto md:ms-0 text-white">2022 airdokan. All right reserved.</small>
             </div>
          </div>
       </div>

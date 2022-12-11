@@ -1,6 +1,6 @@
 .news {
   padding: 120px 0;
-  background-color: #f4fbff;
+  background-color: var(--main-news-bg);
 }
 
 .news__content {
@@ -10,41 +10,41 @@
 .news__card {
   width: 100%;
   max-width: 405px;
-  background-color: #f4fbff;
+  background-color: transparent;
 }
 
 .news__title {
   font-size: 48px;
   line-height: 120%;
   letter-spacing: -0.01em;
-  color: #211f25;
+  color: var(--main-title);
 }
 
 .news__text {
   font-size: 17.7778px;
   line-height: 150%;
-  color: #3d3a41;
+  color: var(--main-text);
 }
 
 .news__link {
   font-size: 15.8025px;
   line-height: 150%;
-  color: #ff007a;
-  border: 1px solid #ff007a;
+  color: var(--main-box-hover-a);
+  border: 1px solid var(--main-box-hover-a);
 }
 
 .news-card-title {
   font-weight: 600;
   font-size: 23.4146px;
   line-height: 140%;
-  color: #211f25;
+  color: var(--main-title);
 }
 
 .news-card-text {
   margin-bottom: 31px;
   font-size: 15.6098px;
   line-height: 150%;
-  color: #3d3a41;
+  color: var(--main-text);
 }
 
 .news-small {
@@ -52,15 +52,15 @@
   font-weight: 600;
   font-size: 13.6585px;
   line-height: 150%;
-  color: #211f25;
-  background-color: #f4f4f4;
+  color: var(--main-title);
+  background-color: var(--main-news-bg);
 }
 
 .news-time {
   font-weight: 600;
   font-size: 13.6585px;
   line-height: 150%;
-  color: #3d3a41;
+  color: var(--main-text);
 }
 
 .news-card__link {
@@ -68,26 +68,31 @@
   align-items: center;
   font-size: 15.6098px;
   line-height: 150%;
-  color: #ff007a;
+  color: var(--main-box-hover-a);
 }
 
 .news-card__link::after {
-  display: inline-block;
   margin-left: 8px;
   width: 15px;
   height: 15px;
-  background-image: url("../images/Vector.svg");
+  background-image: var(--main-vector-dark);
   background-repeat: no-repeat;
   content: "";
-  background-position: top -5px;
+  background-position: top 2px center;
 }
 
 .news__card:hover {
-  background: #ffffff;
-  box-shadow: 0px 4px 14px #cde3ef;
+  background: var(--main-card-bg);
+  box-shadow: 0px 4px 14px var(--main-news-card-hover);
   border-radius: 8px;
 }
 
 .news__card:hover time {
-  color: #000;
+  color: var(--main-time);
+}
+
+@media only screen and (max-width: 576px) {
+  .news__link {
+    display: none;
+  }
 }
